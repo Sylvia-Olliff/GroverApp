@@ -18,7 +18,7 @@ namespace GroverApp.Repos
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>().HasData(GetEmployees());
+            modelBuilder.Entity<Employee>().HasData(GetEmployees()); //If no db file, create it with some test data
             base.OnModelCreating(modelBuilder);
         }
 

@@ -34,9 +34,10 @@ namespace GroverApp
         {
             _dbService = dataService;
             InitializeComponent();
-            GetEmployees();
+            RefreshEmployeesList();
             NewEmployeeGrid.DataContext = _newEmployee;
 
+            // Does this count as the obligitory "Hello World"?
             Task.Factory.StartNew(() =>
             {
                 Thread.Sleep(2500);
@@ -48,7 +49,7 @@ namespace GroverApp
             Snackbar = this.MainSnackbar;
         }
 
-        private void GetEmployees()
+        private void RefreshEmployeesList()
         {
             EmployeeDG.ItemsSource = _dbService.DataSet;
         }
@@ -62,7 +63,7 @@ namespace GroverApp
 
             _newEmployee = new Employee();
             NewEmployeeGrid.DataContext = _newEmployee;
-            GetEmployees();
+            RefreshEmployeesList();
         }
 
         private void UpdateItem(object sender, RoutedEventArgs e)
@@ -74,7 +75,7 @@ namespace GroverApp
                 Snackbar.MessageQueue.Enqueue("Failed to Update Employee!");
             else
                 Snackbar.MessageQueue.Enqueue("Employee successfully updated!");
-            GetEmployees();
+            RefreshEmployeesList();
         }
 
         private void SelectEmployeeToEdit(object sender, RoutedEventArgs e)
@@ -90,7 +91,7 @@ namespace GroverApp
                 Snackbar.MessageQueue.Enqueue("Failed to Delete Employee!");
             else
                 Snackbar.MessageQueue.Enqueue("Employee successfully deleted!");
-            GetEmployees();
+            RefreshEmployeesList();
         }
     }
 }

@@ -10,10 +10,13 @@ using System.Threading.Tasks;
 
 namespace GroverApp.Services
 {
+    /// <summary>
+    /// Slightly conceited example but Generics ftw.
+    /// </summary>
     public class EmployeeDataService : IDataService<Employee>
     {
         private EmployeesDatabaseContext _dbContext;
-        private ILogger _logger;
+        private readonly ILogger _logger;
 
         public ObservableCollection<Employee> DataSet { get; }
 
