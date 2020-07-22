@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroverApp", "GroverApp\GroverApp.csproj", "{62D776F2-7FD9-4845-A4E6-710A8D401C5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D776F2-7FD9-4845-A4E6-710A8D401C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D776F2-7FD9-4845-A4E6-710A8D401C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D776F2-7FD9-4845-A4E6-710A8D401C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D776F2-7FD9-4845-A4E6-710A8D401C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ACEF86C-518B-44D1-9B5F-3CAECDFAF746}
+	EndGlobalSection
+EndGlobal
